@@ -11,14 +11,15 @@ Scripts em Python para automatização de diversas tarefas administrativas no si
  - Consulta de status da SOB;
  - Inserção de data *apta a fiscalizar* no Gommobile;
  - Consulta de SOB's energizadas;
- - Extração de material para arquivo em .xlsx - com opção de enviar por e-mail (Outlook).
+ - Extração de material para arquivo em .xlsx - com opção de enviar por e-mail (Outlook);
+ - Verificação de arquivos (.dwg, .pdf) anexados com base em palavras chaves, por exemplo: "AS_BUILT", "SGD", "DESENHO_LOCADO", etc.
 
 ## Módulos - GOMNET - BeautifulSoup + Requests
 - Extração de status da SOB - opção de única ou várias (através de arquivo .xlsx);
 - Download de arquivos .dwg, .pdf, .zip - utilizando Aria2c.  
 
 ## Módulos EMA
-- Trabalha no arquivo *Pacote de Obras* (.xlsx) utilizando a biblioteca Openpyxl:
+- Trabalho no arquivo *Pacote de Obras* (.xlsx) utilizando a biblioteca Openpyxl:
 	1. Filtrando SOB's a programar;
 	2. Fazendo uma varredura na pasta "Pacote de Obras" do sistema procurando por pastas previamente criadas;
 	3. Criando pastas com a nomenclatura:
@@ -26,7 +27,7 @@ Scripts em Python para automatização de diversas tarefas administrativas no si
 		- Data de vencimento.
 	4. Inserindo dentro de cada pasta um arquivo *Rascunho.xlsx* modelo para utilização posterior pelo Locador e Programador.
 	5. Criando um arquivo .txt contendo as novas SOB's para download dos arquivos .dwg no sistema GOMNET.
-- Trabalha no arquivo *Programação Atualizada.xlsx*:
+- Trabalho no arquivo *Programação Atualizada.xlsx*:
 	1. Fazendo uma varredura nas colunas SOB e Data;
 	2. Criando arquivos .xlsx de Planejamento com a nomenclatura:
 		- Data;
